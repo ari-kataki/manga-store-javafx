@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.com.manga.store.manga.MangaController"
+      spacing="0"
+      style="-fx-background-color: #1a1a2e;">
+
+
+    <HBox alignment="CENTER_LEFT"
+          spacing="10"
+          style="-fx-background-color: #16213e;
+                 -fx-padding: 14 20;
+                 -fx-border-color: #0f3460;
+                 -fx-border-width: 0 0 2 0;">
+
+        <Label text="Manga Store"
+               style="-fx-text-fill: #e94560; -fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <Button fx:id="cartButton"
+                text="Cart (0)"
+                onAction="#handleCart"
+                style="-fx-background-color: #0f3460;
+                       -fx-text-fill: white;
+                       -fx-font-size: 12px;
+                       -fx-cursor: hand;
+                       -fx-background-radius: 5;
+                       -fx-padding: 7 14;"/>
+
+        <Button fx:id="logoutButton"
+                text="Logout"
+                onAction="#handleLogout"
+                style="-fx-background-color: #e94560;
+                       -fx-text-fill: white;
+                       -fx-font-size: 12px;
+                       -fx-font-weight: bold;
+                       -fx-cursor: hand;
+                       -fx-background-radius: 5;
+                       -fx-padding: 7 14;"/>
+    </HBox>
+
+
+    <HBox alignment="CENTER_LEFT"
+          spacing="10"
+          style="-fx-background-color: #12122a;
+                 -fx-padding: 12 20;
+                 -fx-border-color: #0f3460;
+                 -fx-border-width: 0 0 1 0;">
+
+        <TextField fx:id="searchField"
+                   promptText="Search manga..."
+                   prefWidth="180"
+                   style="-fx-background-color: #16213e;
+                          -fx-text-fill: white;
+                          -fx-prompt-text-fill: #555555;
+                          -fx-border-color: #0f3460;
+                          -fx-border-radius: 5;
+                          -fx-background-radius: 5;
+                          -fx-padding: 7;
+                          -fx-font-size: 12px;"/>
+
+        <ComboBox fx:id="genreFilter"
+                  prefWidth="170"
+                  style="-fx-background-color: #16213e;
+                         -fx-border-color: #0f3460;
+                         -fx-border-radius: 5;
+                         -fx-background-radius: 5;"/>
+
+        <ComboBox fx:id="sortFilter"
+                  prefWidth="155"
+                  style="-fx-background-color: #16213e;
+                         -fx-border-color: #0f3460;
+                         -fx-border-radius: 5;
+                         -fx-background-radius: 5;"/>
+
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <Button fx:id="outOfStockButton"
+                text="Out of Stock"
+                onAction="#handleOutOfStock"
+                style="-fx-background-color: #0f3460;
+                       -fx-text-fill: #aaaaaa;
+                       -fx-font-size: 11px;
+                       -fx-cursor: hand;
+                       -fx-background-radius: 5;
+                       -fx-padding: 7 12;"/>
+    </HBox>
+
+    <ScrollPane fitToWidth="true"
+                VBox.vgrow="ALWAYS"
+                style="-fx-background: #4b4b4e;
+                       -fx-background-color: rgba(63,56,115,0.79);
+                       -fx-border-color: transparent;">
+
+        <VBox fx:id="mangaContainer"
+              spacing="10"
+              style="-fx-padding: 14 20 20 20;
+                     -fx-background-color: rgba(62,40,71,0.59);"/>
+
+    </ScrollPane>
+
+</VBox>

@@ -1,0 +1,60 @@
+{
+  "catalogo": [
+    {
+      "titolo": "Naruto Vol. 1",
+      "genere": "Action / Adventure",
+      "prezzo": "5.90",
+      "immagine": "narutovl1.jpg",
+      "inStock": true
+    },
+    {
+      "titolo": "Chainsaw Man Vol. 1",
+      "genere": "Action / Fantasy",
+      "prezzo": "5.90",
+      "immagine": "ChainsawManvl1.jpeg",
+      "inStock": true
+    },
+    {
+      "titolo": "Dragon Ball Vol. 1",
+      "genere": "Action / Comedy",
+      "prezzo": "6.50",
+      "immagine": "DBvl1.jpeg",
+      "inStock": false
+    },
+    {
+      "titolo": "Attack on Titan Vol. 1",
+      "genere": "Action / Horror",
+      "prezzo": "6.90",
+      "immagine": "AOTvl1.jpg",
+      "inStock": true
+    },
+    {
+      "titolo": "Demon Slayer Vol. 1",
+      "genere": "Action / Story",
+      "prezzo": "5.90",
+      "immagine": "demonslayervl1.jpg",
+      "inStock": true
+    },
+    {
+      "titolo": "My Hero Academia Vol. 1",
+      "genere": "Action / Superhero",
+      "prezzo": "5.90",
+      "immagine": "myherovl1.jpg",
+      "inStock": false
+    },
+    {
+      "titolo": "Death Note Vol. 1",
+      "genere": "Thriller / Mystery",
+      "prezzo": "6.50",
+      "immagine": "deathnotevl1.jpg",
+      "inStock": true
+    },
+    {
+      "titolo": "Your Lie In April Vol. 1",
+      "genere": "Slice of Life / Drama",
+      "prezzo": "6.00",
+      "immagine": "YLIAvl1.jpg",
+      "inStock": true
+    }
+  ]
+}

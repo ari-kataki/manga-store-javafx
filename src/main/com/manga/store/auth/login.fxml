@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.com.manga.store.auth.LoginController"
+      alignment="CENTER"
+      spacing="15"
+      style="-fx-background-color: #8d09e1; -fx-padding: 50;">
+
+    <Label text="Enter your account"
+           style="-fx-text-fill: #aaaaaa; -fx-font-size: 13px;"/>
+
+    <Region prefHeight="10"/>
+
+    <TextField fx:id="usernameField"
+               promptText="Username"
+               maxWidth="280"
+               style="-fx-background-color: #16213e;
+                      -fx-text-fill: white;
+                      -fx-prompt-text-fill: #666666;
+                      -fx-border-color: #e94560;
+                      -fx-border-radius: 6;
+                      -fx-background-radius: 6;
+                      -fx-padding: 10;
+                      -fx-font-size: 13px;"/>
+
+    <PasswordField fx:id="passwordField"
+                   promptText="Password"
+                   maxWidth="280"
+                   style="-fx-background-color: #16213e;
+                          -fx-text-fill: white;
+                          -fx-prompt-text-fill: #666666;
+                          -fx-border-color: #ec4962;
+                          -fx-border-radius: 6;
+                          -fx-background-radius: 6;
+                          -fx-padding: 10;
+                          -fx-font-size: 13px;"/>
+
+    <Button fx:id="loginButton"
+            text="LOGIN"
+            onAction="#handleLogin"
+            maxWidth="280"
+            style="-fx-background-color: #e94560;
+                   -fx-text-fill: white;
+                   -fx-font-weight: bold;
+                   -fx-font-size: 14px;
+                   -fx-cursor: hand;
+                   -fx-background-radius: 6;
+                   -fx-padding: 11;"/>
+
+    <Label fx:id="messageLabel"
+           text=""
+           style="-fx-text-fill: #ffdddd; -fx-font-size: 12px;"/>
+
+</VBox>
