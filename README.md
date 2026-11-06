@@ -18,6 +18,10 @@ All code is under `src/main/com/manga/store`:
 | `cart` | `cart.fxml`, `CartController` and `Carrello` (the cart, static list) |
 | `data` | `manga.json`, `FileManager` (reads the json) and `CatalogLoader` (loads it in a thread) |
 
+## Earlier version
+
+`earlier-version/` has my first version of this project (April 2026): the login window and a catalog with the manga list written in the code, before the cart and the json file. It is there only to show how it grew.
+
 ## How to run
 1. Download the JavaFX SDK and the Gson jar.
 2. In IntelliJ mark `src` as the sources root, add the JavaFX `lib` folder and the Gson jar as libraries, and add the VM options
